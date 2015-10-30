@@ -86,6 +86,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "<span class='error'>" . $errors . "</span>";
 }
 
+$passengers = "";
+if (isset($_POST['passengers'])){
+	$passengers = htmlspecialchars($_POST['passengers']);
+}
+
 // Form markup
 echo "<form name='travelBy' method= 'post' action=". htmlspecialchars($_SERVER["PHP_SELF"]) . ">";
 echo "<strong>Travel using a</strong><br></br>";
@@ -93,5 +98,5 @@ echo "<input type= 'radio' name= 'vehicle' value= 'plane'> Plane<br></br>";
 echo "<input type= 'radio' name= 'vehicle' value= 'car'> Car<br></br>";
 echo "<input type= 'radio' name= 'vehicle' value= 'bike'> Bike<br></br>";
 echo "<strong>Passengers</strong></br>";
-echo "<input type= 'text' name= 'passengers' value=" . htmlspecialchars($_POST['passengers']) . "><br></br>";
+echo "<input type= 'text' name= 'passengers' value= '" . $passengers . "'><br></br>";
 echo "<input type= 'submit' name= 'submit' value='Travel!'>";
