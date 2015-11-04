@@ -1,15 +1,15 @@
 <?php
-// Plane class
-class Plane extends Abs
-{
-    // Class contructor
-    public function __construct($cap, $speed)
+    // Plane class
+    class Plane extends Abs
     {
-        parent::__construct($cap, $speed, true);
-    }
+        // Class contructor
+        public function __construct($cap, $speed)
+        {
+            parent::__construct($cap, $speed, true);
+        }
 
-    public function printInfo()
-    {
-        echo "Plane: " . parent::info();
+        public function printInfo()
+        {
+            echo "Plane: " . parent::info();
+        }
     }
-}

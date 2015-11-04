@@ -1,15 +1,15 @@
 <?php
-// Car class
-class Car extends Abs
-{
-    // Class contructor
-    public function __construct($cap, $speed)
+    // Car class
+    class Car extends Abs
     {
-        parent::__construct($cap, $speed, false);
-    }
+        // Class contructor
+        public function __construct($cap, $speed)
+        {
+            parent::__construct($cap, $speed, false);
+        }
 
-    public function printInfo()
-    {
-        echo "Car: " . parent::info();
+        public function printInfo()
+        {
+            echo "Car: " . parent::info();
+        }
     }
-}

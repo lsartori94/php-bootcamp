@@ -1,47 +1,47 @@
 <?php
-// Abstract vehice class
-Abstract class Abs
-{
-    private $passengerCapacity;
-    private $topSpeed;
-    private static $canFly;
-
-    // Class contructor
-    public function __construct($cap, $speed, $fly)
+    // Abstract vehice class
+    Abstract class Abs
     {
-        $this->passengerCapacity = $cap;
-        $this->topSpeed = $speed;
-        $this->canFly= $fly;
-    }
+        private $passengerCapacity;
+        private $topSpeed;
+        private static $canFly;
 
-    // Returns top speed
-    public function speed()
-    {
-        return 'Speed: ' . $this->topSpeed . ' Km/h. ';
-    }
+        // Class contructor
+        public function __construct($cap, $speed, $fly)
+        {
+            $this->passengerCapacity = $cap;
+            $this->topSpeed = $speed;
+            $this->canFly= $fly;
+        }
 
-    // Returns passenger capacity
-    public function maxPassengers()
-    {
-        return 'Max passengers: ' . $this->passengerCapacity;
-    }
+        // Returns top speed
+        public function speed()
+        {
+            return 'Speed: ' . $this->topSpeed . ' Km/h. ';
+        }
 
-    // Returns if it can fly
-    public function canFly()
-    {
-        switch ($this->canFly) {
-            case true:
-            return 'It can fly. ';
-            break;
+        // Returns passenger capacity
+        public function maxPassengers()
+        {
+            return 'Max passengers: ' . $this->passengerCapacity;
+        }
 
-        default:
-            return 'It can not fly. ';
-            break;
+        // Returns if it can fly
+        public function canFly()
+        {
+            switch ($this->canFly) {
+                case true:
+                return 'It can fly. ';
+                break;
+
+            default:
+                return 'It can not fly. ';
+                break;
+            }
+        }
+
+        public function info()
+        {
+            return $this->speed() . $this->canFly() . $this->maxPassengers();
         }
     }
-
-    public function info()
-    {
-        return $this->speed() . $this->canFly() . $this->maxPassengers();
-    }
-}
