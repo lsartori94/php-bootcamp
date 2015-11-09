@@ -93,7 +93,8 @@
 	            $errors .= " The maximun number of allowed passengers for the selected transport is " . $max . ".<br></br>";
 	        }
 	    }
-	    echo "<span class='error'>" . $errors . "</span>";
+		// Echo error
+	    echo "<span class='error', style='color:brown;background:#F7CDD0';border:red>" . $errors . "</span>";
 	}
 
 	if (isset($_POST['passengers'])){
@@ -108,4 +109,4 @@
 	$form = new IndexHtml($passengers, $action);
 
 	// Echo Html
-	$form->echoHtml();
+	$form->echoPageHtml();

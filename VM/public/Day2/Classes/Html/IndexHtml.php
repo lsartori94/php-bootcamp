@@ -11,7 +11,7 @@
             $this->action = $act;
         }
 
-        public function echoHtml()
+        public function echoPageHtml()
         {
             echo "<form name='travelBy' method= 'post' action=". $this->action . ">";
             echo "<strong>Travel using a</strong><br></br>";
@@ -22,4 +22,5 @@
             echo "<input type= 'text' name= 'passengers' value= '" . $this->passengers . "'><br></br>";
             echo "<input type= 'submit' name= 'submit' value='Travel!'>";
         }
+        
     }
