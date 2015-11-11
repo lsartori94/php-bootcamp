@@ -1,0 +1,5 @@
+<div class="small-4">
+    <!-- Book button -->
+    <a href="../book.php" class="button info radius">
+        $this->getTitle();
+    </a>

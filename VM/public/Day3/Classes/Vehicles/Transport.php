@@ -44,8 +44,7 @@
         // Returns travel distance
         public function travelDistance()
         {
-            $res = ($this->timeOfTravel * $this->topSpeed);
-            return ($res/60) . " kilometers travelled.";
+            return 2 . " kilometers travelled.";
         }
 
         // Returns all object's info

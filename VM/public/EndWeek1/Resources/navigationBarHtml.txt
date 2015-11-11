@@ -1,0 +1,34 @@
+<body>
+    <!-- Top Bar -->
+    <div class="contain-to-grid sticky">
+        <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on">
+            <ul class="title-area">
+                <li class="name">
+                    <!-- Title -->
+                    <h1><a href="./index.php">Bookstore</a></h1>
+                </li>
+            </ul>
+            <section class="top-bar-section">
+                <ul class="left">
+                    <!-- Search Field -->
+                    <li class="has-form">
+                        <div class"row collapse">
+                            <div class="small-9 columns">
+                                <input type="text" placeholder="Find Book">
+                            </div>
+                            <div class="small-3 columns">
+                                <a href="./search.php" class="alert button expand" imput type= "submit">Search</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="right">
+                    <!-- Misc Button -->
+                    <li class="divider"></li>
+                    <li>
+                        <a href="www.google.com">Misc</a>
+                    </li>
+                </ul>
+            </section>
+        </nav>
+    </div>
